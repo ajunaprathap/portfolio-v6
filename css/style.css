@@ -234,6 +234,10 @@ body {
   .case-study-button {
     max-width: 225px;
   }
+  .case-study-button-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*Problem and Solution Section */
@@ -279,10 +283,26 @@ img.phone {
 @media (min-width: 600px) {
   img.phone {
     width:40%;
+    margin: auto;
   }
 }
 
 /************ Process Section ************/
+/* DESKTOP */
+@media (min-width: 600px) {
+  .show-mobile {
+    display: none;
+  }
+}
+.show-desktop {
+  display: none;
+}
+/* DESKTOP */
+@media (min-width: 600px) {
+  .show-desktop {
+    display: block;
+  }
+}
 
 /* User Survey */
 .user-survey {
@@ -293,9 +313,16 @@ img.phone {
 @media (min-width: 600px) {
   .user-survey {
     background: url('../pictures/illustrationpic.png') left 50% no-repeat;
+    background-size: 45% auto;
   }
   .flex-wrapper {
     display: flex;
+  }
+  .flex-wrapper > * {
+    width: 50%;
+  }
+  .flex-wrapper .paragraph-holder {
+    max-width: 100%;
   }
   .user-survey .wrapper > div {
     width: 50%;
@@ -341,22 +368,40 @@ h3 {
 img.image {
   margin-bottom: 1.5rem;
 }
-
-.image-padding-left {
-  padding-left: 5rem;
+/* DESKTOP */
+@media (min-width: 600px) {
+  .image-padding-left {
+    padding-left: 5rem;
+  }
 }
-
 
 /* Competitive Analysis */
 .paragraph-holder-center {
   margin: 0 auto;
 }
+
+/* DESKTOP */
+@media (min-width: 600px) {
+  .paragraph-holder-spacing {
+    padding-left: 2rem;
+  }
+}
+
 .center-align {
   text-align: center;
 }
+/* DESKTOP */
+@media (min-width: 600px) {
+  .center-align-exception {
+    text-align: center;
+  }
+}
 .button-center {
-  max-width: 400px;
+  max-width: 350px;
   margin: 0 auto;
+}
+.bottom-padding {
+  padding-bottom: 4rem;
 }
 
 /* User Stories */
@@ -370,45 +415,6 @@ img.image {
 
 /* User Flows */
 
-.flex-wrapper-center {
-  align-items: center;
-}
-
-/* Wireframes */
-
-.wireframes {
-  background-color: #F7F2FA;
-}
-.add-margin {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-/* Brand Story */
-
-/* DESKTOP */
-@media (min-width: 600px) {
-
-}
-
-/* High Fidelity Mockups and preference Testing */
-
-.highfid-mockups {
-  background-color: #2C155B;
-  color: #FFFFFF;
-}
-.highfid-mockups h2.process-steps {
-  color: #ffffff;
-}
-.add-padding-top {
-  padding-top: 5rem;
-}
-
-h4{
-  margin-top: 1.5rem;
-  font-size: 0.875rem;
-  text-align: center;
-}
 .user-flow-flex {
   display: flex;
   justify-content: center;
@@ -425,20 +431,72 @@ img.userflow {
     display:flex;
   }
 }
+.flex-wrapper-center {
+  align-items: center;
+}
+
+/* Wireframes */
+
+.wireframes {
+  background-color: #F7F2FA;
+}
+.add-margin {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Brand Story */
+
+
+/* High Fidelity Mockups and preference Testing */
+
+.highfid-mockups {
+  background-color: #2C155B;
+  color: #FFFFFF;
+}
+.highfid-mockups h2.process-steps {
+  color: #ffffff;
+}
+.add-padding-top {
+  padding-top: 2rem;
+}
+/* DESKTOP */
+@media (min-width: 600px) {
+  .add-padding-top {
+    padding-top: 0;
+  }
+}
+.add-padding-top-survey {
+  padding-top: 2rem;
+}
+
+h4{
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
 .indent2 {
   line-height: 1.75rem;
   margin-left: 5rem;
 }
 .logo-outline, .old-and-new-logos, .preference-test-icons  {
-  width: 65%;
+  width: 100%;
   align-self: center;
 }
+
+.image-center {
+  display:block;
+  margin: 0 auto;
+}
+
 .color-palette, .my-typography-image, .preference-test-icons, .old-and-new-logos,.logo-outline {
   margin: 1.5rem 0;
 }
 .final-landing-page {
+  display: block;
   width:70%;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
   align-self: center;
 }
 /* DESKTOP */
@@ -505,8 +563,9 @@ nav .wrapper {
   background-color: #ffffff;
   margin: 5px;
 }
-.nav-links a:hover{color:#F280E7;} /* mouse over */
-.nav-links a:active{ color:#F280E7; } /* selected */
+.nav-links a:hover{border-bottom: 3px solid #F280E7; padding-bottom: 10px; color:#F280E7;} /* mouse over */
+.nav-links a:active{ border-bottom: 3px solid #F280E7; padding-bottom: 10px; color:#F280E7; } /* selected */
+.nav-links a.active{ border-bottom: 3px solid #F280E7; padding-bottom: 10px;color:#F280E7;}
 @media screen and (max-width:1024px){
   .nav-links{
     width: 40%;
@@ -619,7 +678,7 @@ ul.icons{
   list-style: none;
 }
 .copyright {
-  margin-left: auto;
+  margin-left: 1rem;
   align-self: center;
   font-size: 1rem;
 }
