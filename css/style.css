@@ -101,7 +101,7 @@ body {
 
 /********** PROJECT SECTION *************/
 
-.yourspace, .opening-page,  .the-process, .takeaways, .aboutme {
+.yourspace, .opening-page, .takeaways, .my-info {
   background-image: url('../pictures/purpleshade.png');
   background-repeat: no-repeat;
   background-position: bottom;
@@ -328,6 +328,7 @@ img.phone {
     width: 50%;
   }
 }
+
 .quote {
   color: #9F05FA;
   font-size: 1.5rem;
@@ -338,7 +339,7 @@ img.phone {
   line-height: 2.5rem;
   }
 
-.process-steps {
+.process-steps, .myintro {
   color:  #9f05fa;
   font-family: 'Merriweather', serif;
   font-size: 1.5rem;
@@ -361,7 +362,7 @@ h3 {
 
 /* User Personas */
 
-.user-personas {
+.user-personas, .bio {
   background-color: #F7F2FA;
 }
 
@@ -405,13 +406,22 @@ img.image {
 }
 
 /* User Stories */
-.user-stories {
+.user-stories, .last {
   background-color: #F7F2FA;
 }
 
 .image-padding-right {
   padding-right: 5rem;
 }
+/* DESKTOP */
+@media (min-width: 600px) {
+  .user-stories-center{
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+
 
 /* User Flows */
 
@@ -505,22 +515,13 @@ h4{
     width: 60%;
   }
 }
-
-/********** ABOUT ME PAGE *************/
-
-.my-photo {
-  align-self: center;
-  border-radius: 20px;
-  margin: 3rem 0;
+.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
-/* DESKTOP */
-@media (min-width: 600px) {
-  .my-photo{
-    width: 50%;
-  }
-}
-.aboutme{
-  padding-bottom: 3rem;
+.myintro {
+  font-size: 3rem;
 }
 
 /************* NAV BAR ********************/
