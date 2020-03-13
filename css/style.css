@@ -389,6 +389,10 @@ img.image {
     padding-left: 5rem;
   }
 }
+  img.user-personas {
+  display: block;
+  margin:auto;
+  }
 
 /* Competitive Analysis */
 .paragraph-holder-center {
