@@ -1,3 +1,4 @@
+
 /***** General Styles ******/
 
 *,
@@ -40,18 +41,18 @@ body {
   width: 100%;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .content {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-@media (min-width: 600px) {
+/*@media (min-width: 600px) {
   .half {
     width: 50%;
   }
-}
+}*/
 .h1-merriweather {
   font-size: 3rem;
   font-family: 'Merriweather', serif;
@@ -82,7 +83,7 @@ body {
   background-color: #F280E7;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .see-my-work{
     max-width: 225px;
   }
@@ -108,7 +109,7 @@ body {
   background-size: contain;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .your-space-flex {
     display:flex;
     flex-direction: row;
@@ -133,7 +134,7 @@ body {
   opacity: 0.5;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .homepage-para {
     width:65%;
   }
@@ -156,7 +157,7 @@ body {
   background-color: #F280E7;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .button1 {
     max-width: 225px;
     margin-bottom: 0px;
@@ -168,7 +169,7 @@ body {
 /* General Styles */
 
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .section-padding {
     padding: 4rem 0;
   }
@@ -193,7 +194,7 @@ body {
   padding-top: 4rem;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .overview-pic {
     width:30%;
   }
@@ -205,7 +206,7 @@ body {
   align-self: center;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .desktop {
     width:80%;
   }
@@ -230,7 +231,7 @@ body {
   background-color: #F280E7;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .case-study-button {
     max-width: 225px;
   }
@@ -253,7 +254,7 @@ body {
   flex-direction: column;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .problem-and-solution {
     flex-direction: row;
     align-items: center;
@@ -280,7 +281,7 @@ img.phone {
   align-self: center;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   img.phone {
     width:40%;
     margin: auto;
@@ -289,7 +290,7 @@ img.phone {
 
 /************ Process Section ************/
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .show-mobile {
     display: none;
   }
@@ -298,7 +299,7 @@ img.phone {
   display: none;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .show-desktop {
     display: block;
   }
@@ -309,19 +310,29 @@ img.phone {
   background: none;
 }
 
-/* DESKTOP */
+/* TABLET */
 @media (min-width: 600px) {
+  .flex-wrapper-tablet {
+    display: flex;
+  }
+  .flex-wrapper-tablet .paragraph-holder {
+    max-width: 100%;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 800px) {
   .user-survey {
     background: url('../pictures/illustrationpic.png') left 50% no-repeat;
     background-size: 45% auto;
   }
-  .flex-wrapper {
+  .flex-wrapper-desktop {
     display: flex;
   }
-  .flex-wrapper > * {
+  .flex-wrapper-desktop > * {
     width: 50%;
   }
-  .flex-wrapper .paragraph-holder {
+  .flex-wrapper-desktop .paragraph-holder {
     max-width: 100%;
   }
   .user-survey .wrapper > div {
@@ -365,12 +376,15 @@ h3 {
 .user-personas, .bio {
   background-color: #F7F2FA;
 }
+.bio {
+  padding-bottom: 3rem;
+}
 
 img.image {
   margin-bottom: 1.5rem;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .image-padding-left {
     padding-left: 5rem;
   }
@@ -382,7 +396,7 @@ img.image {
 }
 
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .paragraph-holder-spacing {
     padding-left: 2rem;
   }
@@ -392,7 +406,7 @@ img.image {
   text-align: center;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .center-align-exception {
     text-align: center;
   }
@@ -404,6 +418,9 @@ img.image {
 .bottom-padding {
   padding-bottom: 4rem;
 }
+.bottom-padding-girl {
+  padding-bottom: 2rem;
+}
 
 /* User Stories */
 .user-stories, .last {
@@ -414,14 +431,12 @@ img.image {
   padding-right: 5rem;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .user-stories-center{
     margin-top: 0;
     margin-bottom: 2rem;
   }
 }
-
-
 
 /* User Flows */
 
@@ -432,15 +447,7 @@ img.image {
 img.userflow {
   padding: 20px;
 }
-.userflow-for-mobile {
-  display: none;
-}
-/* DESKTOP */
-@media (min-width: 600px) {
-  .userflow-for-mobile {
-    display:flex;
-  }
-}
+
 .flex-wrapper-center {
   align-items: center;
 }
@@ -471,7 +478,7 @@ img.userflow {
   padding-top: 2rem;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .add-padding-top {
     padding-top: 0;
   }
@@ -503,6 +510,9 @@ h4{
 .color-palette, .my-typography-image, .preference-test-icons, .old-and-new-logos,.logo-outline {
   margin: 1.5rem 0;
 }
+.last img {
+  padding-top: 3rem;
+}
 .final-landing-page {
   display: block;
   width:70%;
@@ -510,7 +520,7 @@ h4{
   align-self: center;
 }
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .final-landing-page {
     width: 60%;
   }
@@ -522,6 +532,14 @@ h4{
 }
 .myintro {
   font-size: 3rem;
+}
+/* TAKEAWAYS */
+
+/* DESKTOP */
+@media (min-width: 800px) {
+  .takeaways {
+    padding-bottom: 15rem;
+  }
 }
 
 /************* NAV BAR ********************/
