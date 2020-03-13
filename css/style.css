@@ -389,10 +389,15 @@ img.image {
     padding-left: 5rem;
   }
 }
-  img.user-personas {
+
+/* DESKTOP */
+/*
+@media (min-width: 600px) {
+  img.maria {
   display: block;
   margin:auto;
   }
+}*/
 
 /* Competitive Analysis */
 .paragraph-holder-center {
