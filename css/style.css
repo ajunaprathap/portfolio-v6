@@ -253,6 +253,7 @@ body {
   display:flex;
   flex-direction: column;
 }
+
 /* DESKTOP */
 @media (min-width: 800px) {
   .problem-and-solution {
@@ -441,7 +442,7 @@ img.image {
 }
 /* DESKTOP */
 @media (min-width: 800px) {
-  .user-stories-center{
+  .user-stories-center {
     margin-top: 0;
     margin-bottom: 2rem;
   }
@@ -509,6 +510,12 @@ h4{
 .logo-outline, .old-and-new-logos, .preference-test-icons  {
   width: 100%;
   align-self: center;
+}
+/* DESKTOP */
+@media (min-width: 800px) {
+  .old-and-new-logos {
+    padding-bottom: 0;
+  }
 }
 
 .image-center {
