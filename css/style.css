@@ -30,6 +30,13 @@ body {
   padding-right: 16px;
   padding-left:  16px;
 }
+/* TABLET */
+@media (min-width: 600px) and (max-width:800px) {
+  .wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 
 /***** Introduction Section *****/
 
@@ -82,6 +89,16 @@ body {
 .see-my-work:hover {
   background-color: #F280E7;
 }
+
+/* TABLET */
+@media (min-width: 600px) and (max-width: 800px){
+  .see-my-work {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* DESKTOP */
 @media (min-width: 800px) {
   .see-my-work{
@@ -123,6 +140,16 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+/* TABLET */
+@media (min-width: 600px) and (max-width:800px) {
+  .otherhalf{
+    text-align: center;
+  }
+  .otherhalf .heading{
+    text-align: center;
+  }
+}
+
 .heading {
   text-align: left;
   margin-bottom: 0.5rem;
@@ -155,6 +182,15 @@ body {
 }
 .button1:hover {
   background-color: #F280E7;
+}
+
+/* TABLET */
+@media (min-width: 600px) and (max-width: 800px){
+  .button1 {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /* DESKTOP */
 @media (min-width: 800px) {
@@ -230,6 +266,16 @@ body {
 .case-study-button:hover {
   background-color: #F280E7;
 }
+
+/* TABLET */
+@media (min-width: 600px) and (max-width: 800px){
+  .case-study-button {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* DESKTOP */
 @media (min-width: 800px) {
   .case-study-button {
@@ -286,6 +332,14 @@ img.phone {
   img.phone {
     width:40%;
     margin: auto;
+  }
+}
+
+@media (max-width:800px) {
+  .image-center-mobile-tablet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -421,6 +475,13 @@ img.image {
     text-align: center;
   }
 }
+/* TABLET */
+@media (max-width: 800px){
+  .center-align-mobile-tablet {
+    text-align: center;
+  }
+}
+
 .button-center {
   max-width: 350px;
   margin: 0 auto;
@@ -431,6 +492,7 @@ img.image {
 .bottom-padding-girl {
   padding-bottom: 2rem;
 }
+
 
 /* User Stories */
 .user-stories, .last {
@@ -470,6 +532,12 @@ img.userflow {
 .add-margin {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+@media (min-width: 600px){
+  .add-margin-tablet-desktop {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
 
 /* Brand Story */
@@ -526,9 +594,7 @@ h4{
 .color-palette, .my-typography-image, .preference-test-icons, .old-and-new-logos,.logo-outline {
   margin: 1.5rem 0;
 }
-.last img {
-  padding-top: 3rem;
-}
+
 .final-landing-page {
   display: block;
   width:70%;
@@ -543,8 +609,8 @@ h4{
 }
 .back-to-top {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 30px;
+  right: 30px;
 }
 .myintro {
   font-size: 3rem;
@@ -599,7 +665,7 @@ nav .wrapper {
   margin: 5px;
 }
 .nav-links a:hover{border-bottom: 3px solid #F280E7; padding-bottom: 10px; color:#F280E7;} /* mouse over */
-.nav-links a:active{ border-bottom: 3px solid #F280E7; padding-bottom: 10px; color:#F280E7; } /* selected */
+/*.nav-links a:active{ border-bottom: 3px solid #F280E7; padding-bottom: 10px; color:#F280E7; } /* selected */
 .nav-links a.active{ border-bottom: 3px solid #F280E7; padding-bottom: 10px;color:#F280E7;}
 @media screen and (max-width:1024px){
   .nav-links{
