@@ -70,13 +70,15 @@ body {
   font-size: 1.5rem;
   opacity: 80%;
   margin-bottom: 3rem;
+  line-height: 2.1rem;
+  font-weight: 500;
 }
 .button-container {
   margin-top: 35px;
 }
 .see-my-work {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   color: #ffffff;
   border-radius: 10px;
   border: 2px solid #ffffff;
@@ -173,7 +175,7 @@ body {
   font-size: 1.125rem;
   color: #ffffff;
   border-radius: 10px;
-  border: 2px solid #ffffff;
+  border: 2px solid #2C155B;
   background-color: #2C155B;
   padding:10px;
   width: 100%;
@@ -254,7 +256,7 @@ body {
   font-size: 1.125rem;
   color: #ffffff;
   border-radius: 10px;
-  border: 2px solid #ffffff;
+  border: 2px solid #2C155B;
   background-color: #2C155B;
   padding:10px;
   width: 100%;
@@ -323,6 +325,7 @@ h2.process {
 p {
   margin-bottom: 1.5rem;
   line-height: 1.75rem;
+  font-size: 1.1rem;
 }
 img.phone {
   width:60%;
@@ -466,10 +469,21 @@ img.image {
     padding-left: 2rem;
   }
 }
+.top-bottom-padding {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
 
 .center-align {
   text-align: center;
 }
+/* DESKTOP */
+@media (min-width: 800px) {
+  .center-align{
+    text-align: left;
+  }
+}
+
 /* DESKTOP */
 @media (min-width: 800px) {
   .center-align-exception {
@@ -483,6 +497,7 @@ img.image {
   }
 }
 
+
 .button-center {
   max-width: 350px;
   margin: 0 auto;
@@ -490,8 +505,17 @@ img.image {
 .bottom-padding {
   padding-bottom: 4rem;
 }
-.bottom-padding-girl {
+.bottom-padding-girl, .bottom-padding-para {
   padding-bottom: 2rem;
+}
+.create-seperation {
+  margin-bottom: 4rem;
+}
+/* DESKTOP */
+@media (min-width: 800px) {
+  .create-seperation {
+    margin-bottom: 8rem;
+  }
 }
 
 
@@ -516,6 +540,7 @@ img.image {
 .user-flow-flex {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 img.userflow {
   padding: 20px;
@@ -545,7 +570,11 @@ img.userflow {
 
 
 /* High Fidelity Mockups and preference Testing */
-
+.big-font {
+  font-size: 1.50rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
 .highfid-mockups {
   background-color: #2C155B;
   color: #FFFFFF;
@@ -576,7 +605,7 @@ h4{
   line-height: 1.75rem;
   margin-left: 5rem;
 }
-.logo-outline, .old-and-new-logos, .preference-test-icons  {
+.old-and-new-logos  {
   width: 100%;
   align-self: center;
 }
@@ -584,6 +613,7 @@ h4{
 @media (min-width: 800px) {
   .old-and-new-logos {
     padding-bottom: 0;
+    width: 60%;
   }
 }
 
@@ -592,7 +622,7 @@ h4{
   margin: 0 auto;
 }
 
-.color-palette, .my-typography-image, .preference-test-icons, .old-and-new-logos,.logo-outline {
+.color-palette, .my-typography-image, .old-and-new-logos,.logo-outline {
   margin: 1.5rem 0;
 }
 
@@ -623,6 +653,9 @@ h4{
   .takeaways {
     padding-bottom: 15rem;
   }
+}
+.girl-illustration {
+  padding-top: 3rem;
 }
 
 /************* NAV BAR ********************/
@@ -778,6 +811,9 @@ nav .wrapper {
 ul.icons{
   display: flex;
   list-style: none;
+}
+ul.icons li {
+  padding-right: 1rem;
 }
 .copyright {
   margin-left: 1rem;
